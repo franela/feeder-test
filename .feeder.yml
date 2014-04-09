@@ -1,5 +1,7 @@
 notify:
   - hipchat
+services:
+  - crosbymichael/redis
 docker:
   - FROM ubuntu
   - RUN apt-get install nginx
