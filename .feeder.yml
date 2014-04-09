@@ -5,4 +5,4 @@ services:
 docker:
   - FROM ubuntu
   - RUN apt-get install -y telnet
-  - CMD make test
+  - CMD env
