@@ -1,0 +1,6 @@
+notify:
+  - hipchat
+docker:
+  - FROM ubuntu
+  - RUN apt-get install nginx
+  - CMD make test
