@@ -1,8 +1,12 @@
 services:
   - crosbymichael/redis
 
-docker:
+build: &testImage
   - FROM ubuntu
   - RUN apt-get install -y telnet
   - RUN npm install
-  - CMD ["npm","test"]
+  - CMD ["make","test"]
+
+images:
+- feeder/buildImage:%{git.tag}-%{git.branch}-%{git.sha}: *testImage
+- feeder/nginx: api/Dockerfile

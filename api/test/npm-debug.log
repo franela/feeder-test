@@ -1,0 +1,19 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/vagrant/.nvm/v0.11.12/bin/node',
+1 verbose cli   '/home/vagrant/.nvm/v0.11.12/bin/npm',
+1 verbose cli   'test' ]
+2 info using npm@1.4.3
+3 info using node@v0.11.12
+4 error Error: ENOENT, open '/home/vagrant/feeder-test/api/test/package.json'
+5 error If you need help, you may report this *entire* log,
+5 error including the npm and node versions, at:
+5 error     <http://github.com/npm/npm/issues>
+6 error System Linux 3.8.0-35-generic
+7 error command "/home/vagrant/.nvm/v0.11.12/bin/node" "/home/vagrant/.nvm/v0.11.12/bin/npm" "test"
+8 error cwd /home/vagrant/feeder-test/api/test
+9 error node -v v0.11.12
+10 error npm -v 1.4.3
+11 error path /home/vagrant/feeder-test/api/test/package.json
+12 error code ENOENT
+13 error errno -2
+14 verbose exit [ -2, true ]
