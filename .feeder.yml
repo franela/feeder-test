@@ -3,7 +3,7 @@ services:
 
 build: &testImage
   - FROM ubuntu
-  - RUN apt-get install -y telnet
+  - RUN apt-get install -y telnet nodejs
   - RUN npm install
   - CMD ["make","test"]
 
