@@ -1,6 +1,8 @@
 services:
   - crosbymichael/redis
+
 docker:
   - FROM ubuntu
   - RUN apt-get install -y telnet
-  - CMD env
+  - RUN npm install
+  - CMD ["npm","test"]
