@@ -1,4 +1,4 @@
-services:
+dependencies:
   - crosbymichael/redis
 
 build: &testImage
