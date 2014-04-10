@@ -1,0 +1,22 @@
+{
+  "name": "feeder-test",
+  "version": "0.0.0",
+  "description": "Feeder test repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/franela/feeder-test.git"
+  },
+  "author": "Marcos & Jonas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franela/feeder-test/issues"
+  },
+  "homepage": "https://github.com/franela/feeder-test",
+  "devDependencies": {
+    "mocha": "^1.18.2"
+  }
+}
