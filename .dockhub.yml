@@ -5,8 +5,10 @@ build: &testImage
   - FROM ubuntu
   - RUN apt-get install rlwrap -y wget make
   - RUN wget --no-check-certificate https://launchpad.net/~chris-lea/+archive/node.js-devel/+build/5532796/+files/nodejs_0.11.11-1chl1~precise1_amd64.deb; dpkg -i nodejs_0.11.11-1chl1~precise1_amd64.deb
-  - WORKDIR /root/source
+  - WORKDIR /root/source/api
+  - WORKDIR /root/source/web
   - RUN npm install
+  - WORKDIR /root/source
   - CMD ["make","test"]
 
 images:
