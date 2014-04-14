@@ -1,5 +1,5 @@
 dependencies:
-  - crosbymichael/redis
+  db: crosbymichael/redis
 
 build: &testImage
   - FROM ubuntu
