@@ -1,5 +1,5 @@
 test: 
-	cd api; npm install; npm test;
-	cd web; npm install; npm test;
+	cd api; npm test;
+	cd web; npm test;
 
 .PHONY: test
