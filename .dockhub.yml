@@ -9,5 +9,5 @@ build: &testImage
   - CMD ["make","test"]
 
 images:
-  - feeder/buildImage: *testImage
-  - feeder/myapp: api/Dockerfile
+  feeder/buildImage: *testImage
+  feeder/myapp: api/Dockerfile
