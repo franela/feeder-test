@@ -10,4 +10,4 @@ build: &testImage
 
 images:
 - feeder/buildImage:%{git.tag}-%{git.branch}-%{git.sha}: *testImage
-- feeder/nginx: api/Dockerfile
+- feeder/myapp: api/Dockerfile
