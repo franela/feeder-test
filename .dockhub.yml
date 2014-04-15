@@ -9,5 +9,5 @@ build: &testImage
   - CMD ["make","test"]
 
 images:
-- feeder/buildImage:%{git.tag}-%{git.branch}-%{git.sha}: *testImage
-- feeder/myapp: api/Dockerfile
+  - feeder/buildImage: *testImage
+  - feeder/myapp: api/Dockerfile
