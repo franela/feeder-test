@@ -9,5 +9,5 @@ dependencies:
   - CMD ["make","test"]
 
 images:
-  feeder/buildImage: *build
+  feeder/build: *build
   feeder/myapp: api/Dockerfile
